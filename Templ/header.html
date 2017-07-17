@@ -1,0 +1,60 @@
+<header>
+  <div class="container-fluid" >
+    <div class="row">
+          <div class="col-md-12" style="padding:0px;">
+            <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix-top" style="background-color:black">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                            </button>
+
+                            <a class="navbar-brand" href="index.html">
+                                <img src="img/hk.png" alt="HTML tutorial" style="width:42px;height:35px;border:0;padding-bottom:10px;">
+                              </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                              <li>
+                                  <a  href="index.html" class="anav"><strong>{{myData.home}}</strong></a>
+                              </li>
+                              <li>
+                                  <a href="nearby_tourist_places.html" class="anav"><strong>{{myData.nearby}}</strong></a>
+                              </li>
+                              <li>
+                                  <a href="facilities.html" class="anav"><strong>{{myData.facility}}</strong></a>
+                              </li>
+                              <li>
+                                  <a href="about.html" class="anav"><strong>{{myData.about}}</strong></a>
+                              </li>
+                              <li>
+                                  <a href="contact.html" class="anav"><strong>{{myData.contact}}</strong></a>
+                              </li>
+
+                              <li>
+                                <div class="btn-group pull-right" style="padding-right:1%;padding-top:15px;" >
+                                <font color="white"><strong>{{myData.Language}}</strong></font>
+                                    <select class="selectpicker" ng-options="option.name for option in language.lanOptions track by option.value"
+                  ng-model="language.selectedLang" ng-change="update()">
+                                    <option value="en_US"> English </option>
+                                    <option value="si_LK"> Sinhala </option>
+                                    <option value="ta_LK"> Tamil </option>
+                                </select>
+                                </div>
+                              </li>
+
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+          </div>
+      </div>
+  </div><!-- End of container--><br><br>
+</header>

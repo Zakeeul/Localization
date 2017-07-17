@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div ng-app="myApp" ng-controller="myctrl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{myData.title}}</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="css/jquery-3.2.1.min.js"></script>
+ 	  <script src="js/angular.min.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+
+</head>
+
+<body background="img/back4.png">
+
+  <div ng-include="'Templ/header.html'"></div>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<h2>{{myData.aboutus}}</h2>
+
+        <h1 style="color:#a47626;font-size:60px;font-family:Bleeding Cowboys; src:("fonts/Bleeding Cowboys.ttf")">
+          {{myData.kandalama}}
+        </h1>
+        <br>
+  			<p><img class="img-responsive" src="img/kan2.jpg" alt="" width="1500"></p>
+  			<p style="text-align:justify">
+  				{{myData.pabout}}<br><br>
+  			</p>
+  		</div>
+  	</div>
+  </div>
+
+
+  <div ng-include="'Templ/footer.html'"></div>
+
+</div><!-- End of myApp -->
+
+  <script src="Templ/nglocaliz.js"></script>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

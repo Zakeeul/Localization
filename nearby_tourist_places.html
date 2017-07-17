@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <div ng-app="myApp" ng-controller="myctrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{myData.title}}</title>
+
+<style>
+   h3{
+	   text-align:center;
+	 }
+
+   p{
+		 text-align:justify;
+		}
+</style>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="css/jquery-3.2.1.min.js"></script>
+ 	    <script src="js/angular.min.js"></script>
+      <script src="js/ngStorage.min.js"></script>
+
+</head>
+
+<body background="img/back4.png" style="background-repeat:no-repeat;">
+
+  <div ng-include="'Templ/header.html'"></div>
+
+    <div class="container">
+    <h1>{{myData.nearbytouristplaces}}</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img alt="Bootstrap Thumbnail First" src="img/dambullact.jpg" />
+                  <div class="caption" style="height:350px">
+                  <h3>
+                    {{myData.th1}}
+                  </h3>
+                  <p>
+                    {{myData.tc1}}<br><br><br>
+                  </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img alt="Bootstrap Thumbnail Second" src="img/elephentbr.jpg" />
+                  <div class="caption" style="height:350px">
+                  <h3>
+                    {{myData.th2}}
+                  </h3>
+                  <p>
+                    {{myData.tc2}}  </p><br><br>
+
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img alt="Bootstrap Thumbnail Third" src="img/Sigiriya.jpg" />
+                  <div class="caption" style="height:350px">
+                  <h3>
+                    {{myData.th3}}
+                  </h3>
+                  <p>
+                  {{myData.tc3}}    </p>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img alt="Bootstrap Thumbnail First" src="img/meemure.jpg" />
+                    <div class="caption" style="height:500px">
+                    <h3>
+                      {{myData.th4}}
+                    </h3>
+                    <p>
+                      {{myData.tc4}}  </p><br>
+
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img alt="Bootstrap Thumbnail First" src="img/mora.jpg" />
+                  <div class="caption" style="height:500px">
+                    <h3>
+                      {{myData.th5}}
+                    </h3>
+                    <p>
+                    {{myData.tc5}}  </p><br><br><br><br><br>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img alt="Bootstrap Thumbnail First" src="img/riverst.jpg" />
+                  <div class="caption" style="height:500px">
+                    <h3>
+                      {{myData.th6}}
+                    </h3>
+                    <p>
+                    {{myData.tc6}}  </p>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-include="'Templ/footer.html'"></div>
+
+</div><!-- End of myApp -->
+
+  <script src="Templ/nglocaliz.js"></script>
+
+
+  <script src="css/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
